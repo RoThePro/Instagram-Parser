@@ -11,8 +11,8 @@ def parse(url):
 		list.append(obj["username"])
 	return list
 	
-followers = parse("https://api.instagram.com/v1/users/489834446/followed-by?access_token="[ADD ACCESS TOKEN]"&count=10000")
-following = parse("https://api.instagram.com/v1/users/489834446/follows?access_token="[ADD ACCESS TOKEN]"&count=10000")
+followers = parse("https://api.instagram.com/v1/users/"[Add user ID]"/followed-by?access_token="[ADD ACCESS TOKEN]"&count=10000")
+following = parse("https://api.instagram.com/v1/users/"[Add user ID]"/follows?access_token="[ADD ACCESS TOKEN]"&count=10000")
 
 mutual = intersect(followers, following)
 
